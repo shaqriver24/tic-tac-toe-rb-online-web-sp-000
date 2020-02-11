@@ -1,3 +1,14 @@
+WIN_COMBINATIONS = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+  [0, 3, 6],
+  [1, 4, 7],
+  [2, 5, 8],
+  [0, 4, 8],
+  [2, 4, 6]
+]
+
 def display_board(board)
   separator = "-----------"
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -27,7 +38,7 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip
   idx = input_to_index(user_input)
-  if valid_move?(board, idx)
+  if valid_move?(board, idx, current_player(board))
     move(board, idx)
     display_board(board)
   else
@@ -45,17 +56,6 @@ def turn_count(board)
   end
   count
 end
-
-WIN_COMBINATIONS = [
-  [0, 1, 2],
-  [3, 4, 5],
-  [6, 7, 8],
-  [0, 3, 6],
-  [1, 4, 7],
-  [2, 5, 8],
-  [0, 4, 8],
-  [2, 4, 6]
-]
 
 def won?(board)
   WIN_COMBINATIONS.detect do |combo|
