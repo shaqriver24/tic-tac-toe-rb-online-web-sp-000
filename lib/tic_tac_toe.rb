@@ -84,3 +84,10 @@ def winner(board)
     board[won?(board).first]
   end
 end
+
+def play(board)
+  until over?(board)
+    turn(board)
+  end
+  won?(board) ? "Congratulations #{winner(board)}!" : "Cat's game!"
+end
