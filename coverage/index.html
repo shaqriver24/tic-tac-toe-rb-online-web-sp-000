@@ -14,18 +14,18 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-02-11T08:08:37+00:00">2020-02-11T08:08:37+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-02-11T08:09:07+00:00">2020-02-11T08:09:07+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.78%</span></span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         12.5
+         13.5
        </span>
     </span> hits/line)
   </h2>
@@ -33,8 +33,8 @@
   <div>
     <b>1</b> files in total.
     <b>45</b> relevant lines. 
-    <span class="green"><b>44</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <span class="green"><b>45</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,12 +52,12 @@
       
       <tr>
         <td class="strong"><a href="#d46c4d456348c5ad4c2ec1fe3bff3b306895153a" class="src_link" title="lib/tic_tac_toe.rb">lib/tic_tac_toe.rb</a></td>
-        <td class="green strong">97.78 %</td>
+        <td class="green strong">100.0 %</td>
         <td>86</td>
         <td>45</td>
-        <td>44</td>
-        <td>1</td>
-        <td>12.5</td>
+        <td>45</td>
+        <td>0</td>
+        <td>13.5</td>
       </tr>
       
     </tbody>
@@ -79,11 +79,11 @@
         <div class="source_table" id="d46c4d456348c5ad4c2ec1fe3bff3b306895153a">
   <div class="header">
     <h3>lib/tic_tac_toe.rb</h3>
-    <h4><span class="green">97.78 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
       <b>45</b> relevant lines. 
-      <span class="green"><b>44</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>45</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -162,38 +162,38 @@
           <code class="ruby">def display_board(board)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="13">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="13">
+          <span class="hits">7</span>
           
           <code class="ruby">  separator = &quot;-----------&quot;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="14">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="14">
+          <span class="hits">7</span>
           
           <code class="ruby">  puts &quot; #{board[0]} | #{board[1]} | #{board[2]} &quot;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="15">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="15">
+          <span class="hits">7</span>
           
           <code class="ruby">  puts separator</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="16">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="16">
+          <span class="hits">7</span>
           
           <code class="ruby">  puts &quot; #{board[3]} | #{board[4]} | #{board[5]} &quot;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="17">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="17">
+          <span class="hits">7</span>
           
           <code class="ruby">  puts separator</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="18">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="18">
+          <span class="hits">7</span>
           
           <code class="ruby">  puts &quot; #{board[6]} | #{board[7]} | #{board[8]} &quot;</code>
         </li>
@@ -288,8 +288,8 @@
           <code class="ruby">def move(board, idx, char)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="34">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="34">
+          <span class="hits">5</span>
           
           <code class="ruby">  board[idx] = char</code>
         </li>
@@ -339,11 +339,11 @@
         <li class="covered" data-hits="2" data-linenumber="42">
           <span class="hits">2</span>
           
-          <code class="ruby">    move(board, idx)</code>
+          <code class="ruby">    move(board, idx, current_player(board))</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
+        <li class="covered" data-hits="2" data-linenumber="43">
+          <span class="hits">2</span>
           
           <code class="ruby">    display_board(board)</code>
         </li>
@@ -390,20 +390,20 @@
           <code class="ruby">def turn_count(board)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="51">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="51">
+          <span class="hits">4</span>
           
           <code class="ruby">  count = 0</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="52">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="52">
+          <span class="hits">4</span>
           
           <code class="ruby">  board.each do |space|</code>
         </li>
       
-        <li class="covered" data-hits="18" data-linenumber="53">
-          <span class="hits">18</span>
+        <li class="covered" data-hits="36" data-linenumber="53">
+          <span class="hits">36</span>
           
           <code class="ruby">    if space == &quot;X&quot; || space == &quot;O&quot;</code>
         </li>
@@ -426,8 +426,8 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="57">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="57">
+          <span class="hits">4</span>
           
           <code class="ruby">  count</code>
         </li>
@@ -450,8 +450,8 @@
           <code class="ruby">def current_player(board)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="61">
+          <span class="hits">3</span>
           
           <code class="ruby">  turn_count(board) % 2 == 0 ? &quot;X&quot; : &quot;O&quot;</code>
         </li>
